@@ -1,0 +1,133 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+
+}
+
+:root{
+    --game-background-color: #f6f6f6;
+    --gradient:linear-gradient(to right, #93edc7, #1cd8d2);
+}
+
+html{
+    font-size: 62.5%;
+    
+}
+button:hover{
+    cursor:pointer !important;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4rem;
+    font-size: 2rem;
+    font-weight: 400;
+    background: #2c3e50; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2c3e50, #3498db); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2c3e50, #3498db); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.shoppingCart{
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    width: 8rem;
+    height: 8rem;
+    border: none;
+    border-radius: 50%;
+    font-size: 100%;
+}
+
+.shoppingCart:hover{
+    cursor: pointer;
+}
+
+.shoppingCart__message{
+    width: 3rem;
+    height: 3rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background: var((--gradient));
+    border: 0.2rem solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+   width: 60%;
+   height:100%;
+
+}
+
+.games{
+    display: grid;
+    grid-template-columns:1fr 1fr ;
+    grid-template-rows: 50rem 50rem;
+}
+
+.games__game{
+    list-style: none;
+    background: var(--game-background-color);
+    border-radius: 0.5rem;
+}
+
+.games__game--third{
+    grid-column: span 2;
+}
+
+.games__figure{
+    width: 100%;
+    height: 60%;
+}
+
+.games__img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.games__h2{
+    font-size: 300%;
+    font-weight:700 ;
+}
+
+.games__h3 {
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.games__stars{
+    color: gold;
+    font-size: 130%;
+}
+
+.games__button{
+    width: 20rem;
+    border: none;
+    font-size: 90%;
+    font-family: 'lato',sans-serif;
+    color: white;
+    background: black;
+    padding: 1rem 2rem;
+}
+
+.games__body{
+    padding: 2rem;
+    height: 40%;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: flex-end;
+}
+
+.games__h2{
+    font-size: 300%;
+    font-weight: 700;
+}
